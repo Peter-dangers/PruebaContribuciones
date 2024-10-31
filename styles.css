@@ -1,0 +1,217 @@
+/* Estilos para el formulario de inicio y registro */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-image: url('backgrounds/fondo.png'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container, .register-container {
+    background-color: rgba(255, 120, 0, 0.9); /* Naranja de Dragon Ball */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    border: 2px solid #ffca28; /* Dorado */
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Comic Sans MS', monospace;
+    color: #ffca28; /* Dorado */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #fff;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ffca28; /* Dorado */
+    border-radius: 4px;
+    background-color: #ffe0b2; /* Fondo ligero */
+}
+
+button {
+    padding: 10px;
+    background-color: #0070c9; /* Azul intenso */
+    color: #ffca28; /* Dorado */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.avatar-preview {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Comic Sans MS', monospace;
+}
+
+/* Estilos generales */
+.dashboard-main, .create-character-container, .characters-list-container, .character-details-container, .leaderboard-container, .dashboard-container {
+    background-color: rgba(255, 120, 0, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+    color: #ffca28;
+    font-family: 'Comic Sans MS', monospace;
+}
+
+.character-details-container img {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    border: 3px solid #ffca28;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    background-color: #0070c9;
+    color: #ffca28;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+form {
+    margin: 7px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(0, 112, 201, 0.9);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenedor de la tabla de clasificaciones */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ffca28;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-family: 'Comic Sans MS', monospace;
+    color: #fff;
+}
+
+th {
+    background-color: #ff6f00;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 112, 201, 0.2);
+}
+
+/* Estilos del contenedor principal */
+.dashboard-container {
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Estilos de las fichas */
+.card {
+    width: 100%;
+    background-color: #0070c9;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #ffca28;
+}
+
+.card p {
+    color: #ffeb3b;
+}
+
+/* Botón en cada ficha */
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffca28;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #ffeb3b;
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 600px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+}
